@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class TCPSocketCopyDemo {
 	public static void main(String[] args) throws Exception{
-		Socket socket = new Socket("65.49.134.108", 6000);
+		Socket socket = new Socket("127.0.0.1", 6000);
 		OutputStream out = socket.getOutputStream();
 		FileInputStream fis = new FileInputStream("C:\\迅雷下载\\forum.torrent");
 		byte[] bytes = new byte[1024];
